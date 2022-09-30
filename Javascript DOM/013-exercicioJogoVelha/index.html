@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main data-theme="dark">
+      <header class="flex align-center justify-between">
+        <h1>Jogo da Velha</h1>
+        <button class="themeSwitcher" id="themeSwitcher">
+          Switch Theme Dark/Light
+        </button>
+      </header>
+      <div id="Player1">
+        <label for="Player1">Player 1:</label>
+        <br />
+        <input type="text" name="player1" id="player1" />
+        <br />
+        <br />
+      </div>
+      <div id="Player2">
+        <label for="Player2">Player 2:</label>
+        <br />
+        <input type="text" name="player2" id="player2" />
+        <br />
+        <br />
+        <button class="start themeSwitcher" id="start">START</button>
+        <br />
+        <br />
+      </div>
+      <div id="keys">
+        <button class="charKey" id="pos11" disabled>O</button>
+        <button class="charKey" id="pos12" disabled>L</button>
+        <button class="charKey" id="pos13" disabled>D</button>
+        <button class="charKey" id="pos21" disabled>_</button>
+        <button class="charKey" id="pos22" disabled>X</button>
+        <button class="charKey" id="pos23" disabled>_</button>
+        <button class="charKey" id="pos31" disabled>O</button>
+        <button class="charKey" id="pos32" disabled>L</button>
+        <button class="charKey" id="pos33" disabled>D</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <section class="flex align-center justify-between">
+        <button id="restart">Restart</button>
+        <input type="text" id="result" disabled />
+      </section>
+    </main>
+  </body>
+</html>
